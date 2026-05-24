@@ -24,3 +24,7 @@ jobs:
     - name: Test import app
       run: |
         python -c "import app.app"
+
+    - name: Build Docker image
+      run: |
+        docker build -t devops-homelab ./app
