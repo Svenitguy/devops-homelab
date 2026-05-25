@@ -50,14 +50,18 @@ This represents a real-world DevOps pipeline where application delivery and infr
 
 ## ☁️ Infrastructure (Terraform + Azure)
 
-Infrastructure is managed using Infrastructure as Code (IaC) with Terraform.
+Infrastructure is managed using Infrastructure as Code (IaC) with Terraform to provision Microsoft Azure resources in a repeatable and version-controlled way.
 
-Terraform is used to define and provision cloud resources in Microsoft Azure in a repeatable and version-controlled way.
-
-Current deployment:
 - Azure Resource Group created via Terraform
 
-Future improvements:
+## Deployment
+
+The application is deployed as a temporary cloud environment using Azure Container Apps via Terraform.
+
+The infrastructure is fully reproducible and can be destroyed using Terraform.
+
+## 🚀 Future Improvements
+
 - Azure App Service or Container Apps deployment
 - Virtual Network (VNet) and subnet architecture
 - Azure Key Vault for secrets management

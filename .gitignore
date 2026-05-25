@@ -222,3 +222,10 @@ __marimo__/
 *.tfstate
 *.tfstate.*
 crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform lock file (optioneel in Git, maar vaak beter wel committen)
+# .terraform.lock.hcl
